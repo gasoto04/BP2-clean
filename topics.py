@@ -1,7 +1,7 @@
 # =============================================================================
 # bp2_topics.py — Keyword dictionaries and topic groupings
 # =============================================================================
-# MENTION_TOPICS:        46 topics with keyword lists for regex search
+# MENTION_TOPICS:        79 topics with keyword lists for regex search
 # COUNTRY_TOPIC_GROUPS:  Maps topics to visualization/analysis groups
 #
 # Location: E:\Data\gsoto\analytical\bp2_topics.py
@@ -388,6 +388,103 @@ MENTION_TOPICS = {
     },
 
     # ============================================================
+    # BUCKET: Public Debt Management
+    # ============================================================
+
+    'public_debt_management': {
+        'description': 'Public Debt Management (general)',
+        'keywords': [
+            'public debt management', 'pdm', 'sovereign debt management',
+            'debt management objective', 'cost risk tradeoff',
+            'debt management strategy', 'debt portfolio', 'debt management',
+        ],
+    },
+
+    'debt_management_office': {
+        'description': 'Debt Management Office',
+        'keywords': [
+            'debt management office', 'dmo',
+            'debt management capacity', 'debt management unit', 'dmu',
+        ],
+    },
+
+    'mtds': {
+        'description': 'Medium-Term Debt Strategy',
+        'keywords': [
+            'medium term debt strategy', 'mtds',
+            'cost risk analysis', 'debt financing strategy',
+        ],
+    },
+
+    'abp': {
+        'description': 'Annual Borrowing Plan',
+        'keywords': [
+            'annual borrowing plan', 'abp', 'debt issuance calendar',
+            'sovereign bond auction schedule', 'government debt issuance',
+        ],
+    },
+
+    'dempa': {
+        'description': 'Debt Management Performance Assessment (WB diagnostic tool)',
+        'keywords': [
+            'dempa', 'debt management performance assessment',
+        ],
+    },
+
+    'debt_legal_framework': {
+        'description': 'PDM Legal Framework',
+        'keywords': [
+            'public debt law', 'debt management law', 'borrowing authority',
+            'legal mandate for debt', 'debt ceiling law', 'statutory debt limit',
+            'parliamentary approval of borrowing', 'fiscal responsibility law',
+        ],
+    },
+
+    'legislative_reporting': {
+        'description': 'Reporting Debt to the Legislature',
+        'keywords': [
+            'debt reporting to parliament', 'legislative oversight of debt',
+            'parliamentary debt committee',
+        ],
+    },
+
+    'debt_audit': {
+        'description': 'External Audit of PDM',
+        'keywords': [
+            'external audit', 'audit of public debt',
+            'supreme audit institution debt', 'debt compliance audit',
+        ],
+    },
+
+    'borrowing_authority': {
+        'description': 'Approval Process for Borrowing',
+        'keywords': [
+            'borrowing approval', 'authorization of borrowing',
+            'debt approval process', 'borrowing authority',
+            'debt contracting authority', 'sovereign guarantee approval',
+            'on lending approval',
+        ],
+    },
+
+    'debt_recording': {
+        'description': 'Recording of Public Debt',
+        'keywords': [
+            'debt recording', 'debt database', 'debt registry',
+            'dmfas', 'meridian', 'debt management information system',
+            'dmis', 'debt it system',
+        ],
+    },
+
+    'cash_debt_coordination': {
+        'description': 'Cash Management',
+        'keywords': [
+            'cash management', 'debt cash coordination',
+            'cash flow forecasting', 'cash balance management',
+            'liquidity management',
+        ],
+    },
+
+    # ============================================================
     # BUCKET: Debt Characteristics
     # ============================================================
 
@@ -763,6 +860,19 @@ COUNTRY_TOPIC_GROUPS = {
     'Debt Distress': [
         ('arrears',            'Arrears'),
         ('debt_restructuring', 'Debt Restructuring'),
+    ],
+    'Public Debt Management': [
+        ('public_debt_management',  'Public Debt Management'),
+        ('debt_management_office',  'Debt Management Office'),
+        ('mtds',                    'Medium-Term Debt Strategy'),
+        ('abp',                     'Annual Borrowing Plan'),
+        ('dempa',                   'DeMPA'),
+        ('debt_legal_framework',    'PDM Legal Framework'),
+        ('legislative_reporting',   'Legislative Reporting'),
+        ('debt_audit',              'External Audit of PDM'),
+        ('borrowing_authority',     'Borrowing Authority'),
+        ('debt_recording',          'Debt Recording'),
+        ('cash_debt_coordination',  'Cash Management'),
     ],
     'Debt Characteristics': [
         ('liquidity_issues',            'Liquidity Issues'),
